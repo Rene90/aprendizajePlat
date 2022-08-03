@@ -1,0 +1,57 @@
+Requisitos y descripcion del sistema "Bootcamp Platform"
+
+1 Descripcion del sistema
+Aplicacion web de tipo plataforma educativa que tendra las siguientes funciones:
+1.1Que sirva como enlace de comunicacion entre el alumno y el profesor. Sistema de mensajes (chat) entre los miembros de un grupo (incluyendo al profesor)
+1.2Que el alumno pueda visualizar los apuntes de los temas vistos en clase y descargarlos
+1.3Que el profesor pueda descargar y subir apuntes
+
+
+
+2 Requisitos del sistema
+2.- Existiran tres roles dentro del sistema , Administrador , Profesor, Alumno
+2.1.-El rol de Administrador tendra control total del sitio web, podra hacer cualquier funcion posible dentro del sistema.
+2.2.-El rol de Profesor sera igual que el de Alumno con la diferencia de poder subir apuntes a la plataforma.
+2.3.-CUALQUIER usuario podra acceder a la plataforma desde cualquier navegador.
+2.4.-El sistema debe ser capaz de interactuar en tiempo real con el usuario
+2.5.-El sistem requiere almacenamiento en la nube para contener imagenes de foto de perfil de usuarios y  los apuntes en PDF de las clases vistas. Como primera iteracion el sistema estara destinado a ser usado
+por un maximo de 100 usuarios. 
+
+
+3 Requisitos tecnicos
+
+Herramientas de Software:
+La plataforma sera desarrollada con Javascript REACT en el frontEnd, NODE, EXPRESS en el backend. 
+Base datos SQL O MongoDB (ahorita es indistinto)
+
+
+
+4 Requerimentos Funcionales del Administrador
+4.1 Administrar las cuentas de los usuarios: El administrador podra cambiar el rol de cualquiera de los usuarios. Crear, borrar, editar cualquier usuario.
+4.2 Subir, bajar cualquier recurso disponible de las clases.
+4.3 Acceder a cualquier grupo de alumnos y poder editarlo, anadir o borrar usuarios dentro de el.
+
+5 Requerimentos Funcionales del Usuario
+5.1 Registrarse y hacel login en la aplicacion
+5.2 Comunicarse con alumnos y profesor dentro de su mismo grupo
+5.3 Descargar recursos (pdf)
+
+6 Requerimentos Funcionales del Profesor
+5.1 Registrarse y hacel login en la aplicacion
+5.2 Comunicarse con alumnos y profesor dentro de su mismo grupo
+5.3 Descargar recursos y subirlos (pdf)
+
+
+
+
+ Los campos del usario (administrador, profesor o alumno) seran los siguientes
+Nombre String
+Apellidos String
+Sexo (M,F)
+Edad Number INT
+ROL (Administrador, Profesor, Usuario)
+Fotografia (url ligada al almacenamiento en la nube) String
+Correo electronico String
+Modulo/Grupo String
+Telefono Number INT
+
